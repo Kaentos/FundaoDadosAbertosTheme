@@ -1,0 +1,182 @@
+/* =====================================================
+   The "account masthead" bar across the top of the site
+   ===================================================== */
+
+.account-masthead {
+    background-color: #2b5bb5;
+}
+/* The "bubble" containing the number of new notifications. */
+.account-masthead .account .notifications a span.badge{
+  background-color: #3c7fea;
+}
+/* Borders */
+.account-masthead .account ul li{
+  border-left: 1px solid #97bbf4;
+}
+/* The text and icons in the user account info. */
+.account-masthead .account ul li a {
+  color: white;
+}
+/* The user account info text and icons, when the user's pointer is hovering
+   over them. */
+.account-masthead .account ul li a:hover {
+  color: black;
+  background-color: #97bbf4;
+}
+
+
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+
+.masthead {
+  background-color: #3c7fea;
+}
+
+/* The "navigation pills" in the masthead (the links to Datasets,
+   Organizations, etc) when the user's pointer hovers over them. */
+.masthead .navigation .nav-pills li a:hover {
+  background-color: #97bbf4;
+  color: black;
+}
+/* The "active" navigation pill (for example, when you're on the dataset page
+   the "Datasets" link is active). */
+.masthead .navigation .nav-pills li.active a {
+  background-color: white;
+  color: black;
+}
+/* The "box shadow" effect that appears around the search box when it
+   has the keyboard cursor's focus. */
+.masthead input[type="text"]:focus {
+  -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+}
+/* Border of search bar */
+.masthead input[type="text"]{
+  border-color: black;
+}
+
+/* ===========================================
+   The content in the middle of the front page
+   =========================================== */
+
+/* Remove the "box shadow" effect around various boxes on the page. */
+.box {
+  box-shadow: none;
+}
+/* Remove the borders around the "Welcome to CKAN" and "Search Your Data"
+   boxes. */
+.hero .box {
+  border-style: none;
+  width: 75%;
+  margin: auto;
+  margin-top: 8%; 
+}
+/* Change the colors of the "Search Your Data" box. */
+.homepage .module-search .module-content {
+  color: white;
+  background-color: #3c7fea;
+}
+/* Change the background color of the "Popular Tags" box. */
+.homepage .module-search .tags {
+  background-color: #2b5bb5;
+}
+
+.homepage .module-search .tag:hover{
+  background-color:#97bbf4;
+  color: black;
+}
+
+/* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
+   and "Search Your Data" boxes line up. */
+.module-content:last-child {
+  padding-bottom: 0px;
+}
+.homepage .module-search {
+  padding: 3px;
+}
+/* Add a border line between the top and bottom halves of the front page. */
+.homepage [role="main"] {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+/* Submit Button, magnifier */
+.search-form .search-input.search-giant button {
+  margin-top: -15px;
+  right: 15px;
+  height: 30px;
+}
+
+
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+
+.site-footer,
+body {
+  background-color: #3c7fea;
+}
+/* The text in the footer. */
+.site-footer,
+.site-footer label,
+.site-footer small {
+  color: white;
+}
+/* The link texts in the footer. */
+.site-footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============= Outros ============ */
+
+/* Background "imagem" na home */
+.hero{
+  background: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* hiperligações */ 
+a {
+  color: #3c7fea;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2b5bb5;
+  text-decoration: underline;
+}
+/* ---Botões --- */
+.btn-primary{
+  color: white;
+  background-color: #3c7fea;    
+  background-image: linear-gradient(to bottom, #3c7fea, #2b5bb5);
+}
+/* Hover */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: white;
+  background-color: #316ad6;
+}
+/* Ativo */
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #97bbf4;
+  color: black;
+}
+/* --- Fim dos botões --- */
+
+/* Tag Hover */
+a.tag:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #97bbf4;
+  border: 1px solid #2b5bb5;
+  -webkit-box-shadow: inset 0 1px 0 #33bfb8;
+  -moz-box-shadow: inset 0 1px 0 #33bfb8;
+  box-shadow: inset 0 1px 0 #33bfb8;
+}
+
