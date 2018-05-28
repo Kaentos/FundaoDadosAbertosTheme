@@ -135,6 +135,13 @@ body {
   background-size: cover;
 }
 
+/* Background no resto */
+.main{
+  background: url("bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* hiperligações */ 
 a {
   color: #3c7fea;
@@ -179,4 +186,3 @@ a.tag:hover {
   -moz-box-shadow: inset 0 1px 0 #33bfb8;
   box-shadow: inset 0 1px 0 #33bfb8;
 }
-
