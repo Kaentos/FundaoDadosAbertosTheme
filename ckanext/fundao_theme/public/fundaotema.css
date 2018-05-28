@@ -138,7 +138,7 @@ body {
 /* Background no resto */
 [role="main"], .main{
   background: url("bg2.jpg");
-  background-size: cover;
+  background-size: 100% 640px
 }
 
 /* Titulo da home / localização */
