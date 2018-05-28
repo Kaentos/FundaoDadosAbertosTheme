@@ -1,0 +1,22 @@
+{% set stats = h.get_site_statistics() %}
+
+<!-- Mostrar numero de datasets  -->
+<a href="{{ h.url_for(controller='package', action='search') }}">
+  <b style = "font-size:40px;"><span>{{ h.SI_number_span(stats.dataset_count) }}<span></b>
+  <span>{{ _('dataset') if stats.dataset_count == 1 else _('datasets') }}</span>
+</a>
+<br><br>
+<!-- Mostrar numero de organizações -->        
+<a href="{{ h.url_for(controller='organization', action='index') }}">
+  <b style = "font-size:40px"><span>{{ h.SI_number_span(stats.organization_count) }}<span></b>
+  <span>{{ _('organization') if stats.organization_count == 1 else _('organizations') }}</span>
+</a>
+<br><br>
+<!-- Mostrar numero de grupos -->
+<a href="{{ h.url_for(controller='group', action='index') }}">
+  <b style = "font-size:40px"><span>{{ h.SI_number_span(stats.group_count) }}</span></b>
+  <span>{{ _('group') if stats.group_count == 1 else _('groups') }}</span>
+</a>
+
+<br><br>
+</div>

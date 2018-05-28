@@ -12,5 +12,12 @@
 {% endblock %}
 
 {% block featured_organization %}
-  {% snippet 'snippets/example_theme_most_popular_groups.html' %}
+  <div class="box">
+    <header class="module-heading">
+      <h3>Fundão Dados Abertos estatísticas</h3>
+    </header>
+    <div class="module-content">
+      {% snippet 'home/snippets/stats.html' %}
+    </div>
+  </div>
 {% endblock %}
