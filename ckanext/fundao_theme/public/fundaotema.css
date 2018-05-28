@@ -136,7 +136,7 @@ body {
 }
 
 /* Background no resto */
-.main{
+[role="main"], .main{
   background: url("bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
