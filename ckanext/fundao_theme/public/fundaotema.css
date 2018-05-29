@@ -84,7 +84,7 @@
 
 .homepage .module-search .tag:hover{
   background-color:#97bbf4;
-  color: black;
+  color: white;
 }
 
 /* Remove some padding. This makes the bottom edges of the "Welcome to CKAN"
@@ -135,15 +135,14 @@ body {
   background-size: cover;
 }
 
-/* Background no resto */
-[role="main"], .main{
-  background: url("bg2.jpg");
-  background-size: 100% 640px
+.sub-hero {
+    background-image: none;
+    background-color: #ebeceb;
 }
 
 /* Titulo da home / localização */
 .toolbar .breadcrumb a{
-  color:white;
+  color:black;
 }
 .breadcrumb > li{
   text-shadow:none;
